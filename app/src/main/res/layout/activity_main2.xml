@@ -6,12 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:text="Next page"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="408dp" />
+        android:background="#BD66CC"
+        app:hintEnabled="true"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="111dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="hint"
+            android:visibility="visible" />
+    </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
